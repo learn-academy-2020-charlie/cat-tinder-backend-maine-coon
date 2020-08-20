@@ -1,4 +1,4 @@
 class Cat < ApplicationRecord
     validates :name, :age, :enjoys, presence:true
-    validates :age, 
+    validates :enjoys, length: { minimum: 10 }
 end
